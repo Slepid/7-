@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% block head %}
+  {% load static %}
+  <link href="{% static 'css/style.css' %}" rel = "stylesheet" type = "text/css">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>7ДНЕЙ_С_БЮРО</title>
+  
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'img/favicon.png' % }" rel="icon">
+  <link href="{% static 'img/apple-touch-icon.png' % }" rel="apple-touch-icon">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"> 
+ <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/quill/quill.snow.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/quill/quill.bubble.css'%}" rel="stylesheet">
+  <link href="{% static 'vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/simple-datatables/style.css' %}" rel="stylesheet">
+  
+  
+  <!-- Vendor JS Files -->
+  <script src="{% static 'vendor/apexcharts/apexcharts.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/chart.js/chart.umd.js' %}"></script>
+  <script src="{% static 'vendor/echarts/echarts.min.js' %}"></script>
+  <script src="{% static 'vendor/quill/quill.js' %}"></script>
+  <script src="{% static 'vendor/simple-datatables/simple-datatables.js' %}"></script>
+  <script src="{% static 'vendor/tinymce/tinymce.min.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'js/main.js' %}"></script>
+
+  <!-- =======================================================
+  * Template Name: NiceAdmin
+  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+  * Updated: Apr 20 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+{% endblock head %}
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/slide-11.png" alt="">
+        <span class="d-none d-lg-block">7ДНЕЙ_С_БЮРО</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+	
+	
+	
+	
+	
+	
+	&ensp;&ensp;&ensp;
+	<a href="https://t.me/sevendayswiththebureau" target="_blank"><i class='fab fa-telegram' style='color:#0d6efd'></i></a>
+	&ensp;
+	<a href="https://vk.com/7daywithburo" target="_blank"><i class='fab fa-vk'style='color:#0d6efd'></i>	</a>
+	&ensp;
+	<a href="https://dzen.ru/sevendayswiththebureau" target="_blank"><i class='fab fa-yandex-international' style='color: #0d6efd'></i>	</a>
+			
+			
+			
+			
+			
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link nav-icon search-bar-toggle " href="#">
+            <i class="bi bi-search"></i>
+          </a>
+        </li><!-- End Search Icon-->
+		
+		
+
+        
+
+
+
+        <div class="search-bar">
+      <form class="search-form d-flex align-items-center" method="POST" action="#">
+        <input type="text" name="query" placeholder="найти" title="Enter search keyword">
+        <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+      </form>
+    </div><!-- End Search Bar -->
+        </li><!-- End Profile Nav -->
+		
+		
+				<li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-bookmark-star"></i>
+            <span class="badge bg-success badge-number">4</span>
+          </a><!-- End Messages Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
+            <li class="dropdown-header">
+              Ваша подписка
+              <a href="donate.html"><span class="badge rounded-pill bg-primary p-2 ms-2">Посмотреть все уровни</span></a>
+            </li>
+       
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="donateRegistration.html">
+                <img src="static/images/slide-11.png" alt="" class="rounded-circle">
+                <div>
+                  <h4>Малый вклад</h4>
+                  <strong>69 рублей</strong>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="donateRegistration.html">
+                <img src="static/images/slide-11.png" alt="" class="rounded-circle">
+                <div>
+                  <h4>Деловой вклад</h4>
+                  <strong>999 рублей</strong>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+			
+			<li class="message-item">
+              <a href="donateRegistration.htmll">
+                <img src="static/images/slide-11.png" alt="" class="rounded-circle">
+                <div>
+                  <h4>Инвестор</h4>
+                  <strong>6999 рублей</strong>
+                </div>
+              </a>
+            </li>
+			
+			<li class="message-item">
+              <a href="donateRegistration.html">
+                <img src="static/images/slide-11.png" alt="" class="rounded-circle">
+                <div>
+                  <h4>Академик</h4>
+                  <strong>от 59999 рублей</strong>
+                </div>
+              </a>
+            </li>
+           
+
+          </ul><!-- End Messages Dropdown Items -->
+
+        </li><!-- End Messages Nav -->
+		
+		
+		
+		
+
+      </ul>
+    </nav><!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link " href="index.html">
+          <i class="bi bi-flag"></i>
+          <span>Добро пожаловать</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+      <li class="nav-item">
+	  
+        <a class="nav-link collapsed"  href="{% url 'users:login' %}">
+			<i class="bi bi-arrow-right-square"></i>
+			Войти
+        </a>
+		 <a class="nav-link collapsed"  href="{% url 'users:register' %}">
+          <i class="bi bi-person"></i>
+		  Регистрация
+        </a>
+
+      <a class="nav-link collapsed"  href="https://pay.cloudtips.ru/p/925045f4" target="blank">
+		<button type="button" class="btn btn-warning">Пожертвовать</button>
+      
+		 </a>
+      
+	  
+	  
+
+  </aside><!-- End Sidebar-->
+
+  <main id="main" class="main">
+
+    <section class="section dashboard">
+      <div class="row">
+
+        <!-- Left side columns -->
+        <div class="col-lg-8">
+          <div class="row">
+
+            
+	
+            <iframe width="700" height="400" src="static/images/7day.mp4" allow="autoplay; fullscreen; accelerometer; gyroscope; picture-in-picture; encrypted-media" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                    
+					
+
+         
+            
+              <!-- Bordered Tabs -->
+             
+              
+					                <div class="tab-pane fade show active profile-overview" id="profile-overview">
+
+                  <p class="accordion-body accordion-item accordion">
+				  
+Добро пожаловать на официальный сайт <strong>7Дней_с_Бюро</strong>. Если вы пришли сюда, то вы точно знаете чего хотите от жизни. И наша задача стать для вас проводником к новому контенту.
+Для надача сотрудничества просим вас пройти регистрацию. Далее мы сможем с вами начать взаимодействие. Удачной регистрации и до начнется наше с вами взаимовыгодное партнерство!
+
+</p>
+
+                 
+
+                </div>
+				
+		
+			
+	
+					
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Что такое 7Дней_с_Бюро?
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>7Дней_с_Бюро</strong> - Это экспертное сообщество в ключевых сферах жизни. Мы клуб единомышленников, среди нас есть бизнесмены, ученые, директора предприятий, политики, медийные личности.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Как вступить в ваш клуб?
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>Важно быть экпертом!</strong> Если вы экепрт в одной или нескольких сферах бизнеса, науки и т д, зарегистрируйтесь и присылайте ваше резюме по разделу обратной связи и мы обязательно в ближайшее время его изучим.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Как стать партнером?
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>Партнеры это взаимовыгодное сотрудничество</strong> Нам важны партнеры с хорошей репутацией и те которые способны поддерживать долгосрочные взаимотношения на фоне общих интересов. Мы всегда открыты к диалогу и если вас интересует сотруничество присылайте ваш запрос по форме обратной связи!
+                    </div>
+                  </div>
+                </div>
+              </div><!-- End Default Accordion Example -->
+
+            
+
+          </div>
+		  
+		  
+
+		  
+		  
+		  
+		  <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="static/images/montazha-28.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Подписки</h5>
+                  <p class="card-text">Вкладывайтесь в нас и мы дадим вам прекрасные уровни подписок с хорошими бонусами.</p>
+                </div>
+              </div>
+            </div>
+			
+			 <br>
+			<section id="accordion" class="accordion">
+    
+
+			  <details>
+			 
+				<summary class="accordion-trigger">			
+					Развернуть	
+				</summary>
+				<br>
+				<div class="accordion-content">
+				<center>
+					<h5 class="card-title">Уровень подписок:</h5>
+
+           <hr>
+              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    
+					
+					<h4>Малый вклад</h4>
+                  <p>Доступно просмотр некоторых постов.</p>
+                  <strong>69 рублей</strong> 
+				  
+				  <br><br>
+				  <a class="nav-link collapsed"  href="https://pay.cloudtips.ru/p/925045f4" target="blank">
+							<button type="button" class="btn btn-warning">Купить</button>
+						  
+						</a>
+				  
+				  
+				  <hr>
+				  
+				   <h4>Деловой вклад</h4>
+                  <p>Просмотр всех постов.</p>
+				  <p>Получение юридической консультации (поиск и подбор статей без сопровождения).</p>
+				  <p>Возможность посещать закрытые мероприятия.</p>
+				  <p>Получение скидки до 15% у партнеров.</p>
+				  <p>Возможность посещать обучение от партнеров.</p>
+                  <strong>999 рублей</strong>
+				  
+				  <br><br>
+				  <a class="nav-link collapsed"  href="https://pay.cloudtips.ru/p/925045f4" target="blank">
+							<button type="button" class="btn btn-warning">Купить</button>
+						  
+						</a>
+				  
+				  <hr>
+				  
+				  <h4>Инвестор</h4>
+                  <p>Все привелегии от подписок "Деловой вклад" и "Малый вклад"</p>
+				  <p>Создавать посты.</p>
+				  <p>Получения мерча.</p>
+                  <strong>6999 рублей</strong>
+				  
+				  <br><br>
+				  <a class="nav-link collapsed"  href="https://pay.cloudtips.ru/p/925045f4" target="blank">
+							<button type="button" class="btn btn-warning">Купить</button>
+						  
+						</a>
+				  
+				  <hr>
+				  
+				   <h4>Академик</h4>
+                  <p>Все привелегии от других подписок</p>
+				  <p>Написание одной статьи РИНЦ в соавторстве (стоимость публикации входит в цену)<p>
+				  <p>Продвижение по научной линии (возможность получение статуса секретаря, адъюнкта, академика)</p>
+				  <p>Возможность принять участие в одном из проектов создателя платформы</p>
+				  <p>Навсегда быть внесенным на страницу благодарности одно из IT проекта</p>
+                  <strong>от 59999 рублей</strong>
+				  
+				  <br><br>
+				  <a class="nav-link collapsed"  href="https://pay.cloudtips.ru/p/925045f4" target="blank">
+							<button type="button" class="btn btn-warning">Купить</button>
+						  
+						</a>
+				</div>
+				</center>
+			  </details>
+
+			  
+			  
+		   
+		  </section>
+		  <br>
+		  
+		  
+		  
+		  
+			
+			
+          </div><!-- End Card with an image on left -->
+		  
+        </div><!-- End Left side columns -->
+		
+		
+
+        <!-- Right side columns -->
+        <div class="col-lg-4">
+
+          
+
+          <!-- Website Traffic -->
+          <div class="card">
+            <div class="card-body pb-0">
+              <h5 class="card-title">Мы в других соц сетях <span>| сегодня</span></h5>
+
+              <div id="trafficChart" style="min-height: 400px;" class="echart"></div>
+
+              <script>
+                document.addEventListener("DOMContentLoaded", () => {
+                  echarts.init(document.querySelector("#trafficChart")).setOption({
+                    tooltip: {
+                      trigger: 'item'
+                    },
+                    legend: {
+                      top: '5%',
+                      left: 'center'
+                    },
+                    series: [{
+                      name: 'Access From',
+                      type: 'pie',
+                      radius: ['40%', '70%'],
+                      avoidLabelOverlap: false,
+                      label: {
+                        show: false,
+                        position: 'center'
+                      },
+                      emphasis: {
+                        label: {
+                          show: true,
+                          fontSize: '18',
+                          fontWeight: 'bold'
+                        }
+                      },
+                      labelLine: {
+                        show: false
+                      },
+                      data: [{
+                          value: 1247,
+                          name: 'VK'
+                        },
+                        {
+                          value: 164,
+                          name: 'TG'
+                        },
+                        {
+                          value: 19,
+                          name: 'YANDEX DZEN'
+                        }
+                      ]
+                    }]
+                  });
+                });
+              </script>
+				<div class="alert alert-primary alert-dismissible fade show" role="alert">
+                <center><i class="bi bi-star me-1"></i>
+					Наше комьюнити: <strong>1430</strong>
+				</center>
+              </div>
+            </div>
+          </div><!-- End Website Traffic -->
+			
+			
+			<div class="card">
+            <div class="card-body">
+              <h5 class="card-title">7ДНЕЙ_С_БЮРО</h5>
+              <p>Совершая смелые поступки мы открываем перед собой новые горизонты.</p>
+			  <br>
+			  <i>"Шушпанов М.К."</i>
+            </div>
+          </div>
+			
+			
+          <!-- News & Updates Traffic -->
+          <div class="card">
+            
+
+            <div class="card-body pb-0">
+              <h5 class="card-title">Новости <span>| Сегодня</span></h5>
+
+              <div class="news">
+                <div class="post-item clearfix">
+                  <img src="static/images/news-1.jpg" alt="">
+                  <h4><a href="pages-login.html">Новая версия</a></h4>
+                  <p>Версия платформы 3.0.1</p>
+                </div>
+
+                <div class="post-item clearfix">
+                  <img src="static/images/news-2.jpg" alt="">
+                  <h4><a href="pages-login.html">Новая система партнерских подписок</a></h4>
+                  <p>Мы будем отслеживать ваш статус и включать или отключать доступ</p>
+                </div>
+
+               
+
+              </div><!-- End sidebar recent posts-->
+
+            </div>
+          </div><!-- End News & Updates -->
+
+        </div><!-- End Right side columns -->
+
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      <p>Все права защищены ©<span>2024</span> <strong class="px-1 sitename">7</strong><span>Дней_с_Бюро</span></p>
+    </div>
+    <div class="credits">
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+      Производство <a href="https://vk.com/shushpanov_official" target="_blank">shushpanov_official</a>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+
+
+</body>
+
+</html>

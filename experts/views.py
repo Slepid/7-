@@ -6,6 +6,9 @@ from .models import Expert, News, State, ProjecPar, ExpertsMean
 
 
 # Create your views here.
+def indexregistration(request):
+	return render(request, "indexRegistration.html")
+
 def index1(request):
 	header_index = State.objects.all()
 	return render(request, "index.html", {'header_index': header_index})
